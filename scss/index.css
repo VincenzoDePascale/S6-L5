@@ -29,10 +29,6 @@ main {
 }
 
 footer {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  margin: 0;
   padding: 1em;
   width: 100%;
 }
@@ -50,17 +46,63 @@ li {
 }
 
 main .primaSezione {
+  margin: 1em 0;
   border: 1px solid darkred;
   border-radius: 5px;
   padding: 10px;
 }
+main .primaSezione .titoloSezione {
+  padding: 0 2em;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid darkred;
+}
+main .primaSezione .descrizioneSezione {
+  font-size: 1.5em;
+  padding: 0 2em;
+}
+main .secondaSezione {
+  margin: 1em 0;
+  border: 1px solid navy;
+  border-radius: 5px;
+  padding: 10px;
+}
+main .secondaSezione .titoloCard {
+  padding: 0 2em;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 1px solid navy;
+}
+main .secondaSezione .containerCard {
+  padding: 1em;
+  justify-content: space-between;
+}
+main .secondaSezione .containerCard .card {
+  padding: 0;
+  width: 225px;
+  margin: 1em;
+}
+main .secondaSezione .containerCard .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .secondaSezione img {
+  border-radius: 5px;
+  height: 150px;
+}
 main .caroselSezione {
+  margin: 1em 0;
   display: flex;
   justify-content: center;
   padding: 1em;
 }
 main .caroselSezione .carousel {
   width: 50%;
+  border: 1px solid green;
+  border-radius: 5px;
 }
 main .caroselSezione .carousel .carousel-item img {
   height: 100%;

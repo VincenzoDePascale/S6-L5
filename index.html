@@ -50,8 +50,12 @@
                   Contatti
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Contatto 1</a></li>
-                  <li><a class="dropdown-item" href="#">Contatto 2</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contatto falso 1</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Contatto falso 2</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Sai che ci scrivo</a>
@@ -66,10 +70,14 @@
               <input
                 class="form-control me-2"
                 type="search"
-                placeholder="Cerca"
+                placeholder="Non scrive"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
+              <button
+                class="btn btn-outline-success"
+                type="submit"
+                onclick="navAlert()"
+              >
                 Bottone
               </button>
             </form>
@@ -78,10 +86,99 @@
       </nav>
     </header>
     <main>
-      <sezione class="primaSezione">
-        <div>prima parte</div>
-        <div>seconda parte</div>
-      </sezione>
+      <section class="primaSezione">
+        <div class="titoloSezione">
+          Titolone inutile di una vetrina inutile!
+        </div>
+        <div class="descrizioneSezione">
+          Ciao, sono Vincenzo e non so che diavolo mettere in questa bruttissima
+          pagina, quindi beccatevi cose a caso.
+        </div>
+      </section>
+      <section class="secondaSezione">
+        <div class="titoloCard">Partner del disagio</div>
+        <div class="row containerCard">
+          <div class="card">
+            <img
+              src="./assets/img/spong.jpeg"
+              class="card-img-top"
+              alt="spongebob"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Spongebob</h5>
+              <p class="card-text">
+                Ecco il mio amico immaginario nel sua classia espressione quando
+                guarda il mio codice. <br />
+                Puoi sostenerlo cliccando il bottone.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="spongebobAlert()"
+                >Consolalo</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/img/paperella.jpeg"
+              class="card-img-top"
+              alt="paperella"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ciro</h5>
+              <p class="card-text">
+                Lui è Ciro, il suo unico compito è quello di trascrivere tutte
+                le mie bestemmie e comunicarle ai piani alti. <br />
+                Se vuoi aiutarmi clicca il bottone in basso, per ogni click sarà
+                ridotta la mia pena all'inferno.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="ciroAlert()"
+                >Aiutami</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/img/dipre.jpeg"
+              class="card-img-top"
+              alt="diprè"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Andrea Diprè</h5>
+              <p class="card-text">
+                Questa è la persona che mi ha convinto a diventare
+                programmatore. Un'ispirazione per la mia vita, il suo impegno
+                costante a la serietà nel lavoro mi hanno convinto ad andare
+                avanti anche nei momenti più difficili.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="dipreAlert()"
+                >Congratulati</a
+              >
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./assets/img/gramuglia.jpeg"
+              class="card-img-top"
+              alt="Frank Gramuglia"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Frank Gramuglia</h5>
+              <p class="card-text">
+                L'uomo che mi ha insegnato a mantenere buoni rapporti lavorativi
+                anche con persone poco gradite attraverso la diplomazia.
+              </p>
+              <a
+                href="#"
+                class="btn btn-primary alertGramuglia"
+                onclick="frankAlert()"
+                >Prendi ispirazione</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="caroselSezione">
         <div id="carouselExampleCaptions" class="carousel slide">
           <div class="carousel-indicators">
@@ -165,16 +262,19 @@
     <footer class="row justify-content-between">
       <div class="col-3">
         <ul>
-          <li>list item 1</li>
-          <li>list item 2</li>
-          <li>list item 3</li>
-          <li>list item 4</li>
-          <li>list item 5</li>
+          <li>Lore ipsum</li>
+          <li>Lorem...</li>
+          <li>Lorem...</li>
+          <li>Lorem...</li>
+          <li>Come sopra</li>
         </ul>
       </div>
-      <div class="col-3">centrale</div>
       <div class="col-3">
-        <div>Created By</div>
+        <div>Indovina un po'</div>
+        <div>Questo è un div</div>
+      </div>
+      <div class="col-3">
+        <div>Not created By</div>
         <div>Vincenzo De Pascale</div>
       </div>
     </footer>
@@ -184,4 +284,5 @@
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"
   ></script>
+  <script src="./js/index.js"></script>
 </html>
