@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "roboto", sans-serif;
+  color: #04030f;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav {
+  width: 100%;
+}
+
+main {
+  padding: 1em;
+  margin-top: 50px;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin: 0;
+  padding: 1em;
+  width: 100%;
+}
+
+ul {
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+main .primaSezione {
+  border: 1px solid darkred;
+  border-radius: 5px;
+  padding: 10px;
+}
+main .caroselSezione {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+}
+main .caroselSezione .carousel {
+  width: 50%;
+}
+main .caroselSezione .carousel .carousel-item img {
+  height: 100%;
+  max-height: 500px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+footer {
+  background-color: lightgrey;
+  padding: 1em;
+}
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+footer > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  min-width: 200px;
+  border: 2px solid darkgrey;
+}/*# sourceMappingURL=index.css.map */

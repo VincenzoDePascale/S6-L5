@@ -1,0 +1,22 @@
+main {
+  .primaSezione {
+    border: 1px solid darkred;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .caroselSezione {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    .carousel {
+      width: 50%;
+      .carousel-item {
+        img {
+          height: 100%;
+          max-height: 500px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
