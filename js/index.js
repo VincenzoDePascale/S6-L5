@@ -3,7 +3,7 @@ function navAlert() {
 }
 
 function spongebobAlert() {
-  alert("Ho viste cose che voi umani non potreste immaginarvi");
+  alert("Ho viste cose che voi umani non potreste immaginare");
 }
 
 function ciroAlert() {

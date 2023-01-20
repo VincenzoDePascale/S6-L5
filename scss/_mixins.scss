@@ -1,3 +1,22 @@
 @mixin m-section {
   margin: 1em 0;
 }
+
+@mixin b-rad {
+  border-radius: 10px;
+}
+
+@mixin p {
+  padding: 1em;
+}
+
+@mixin m {
+  margin: 1em;
+}
+
+@mixin titoloni {
+  padding: 0 2em;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}

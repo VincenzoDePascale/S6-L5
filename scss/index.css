@@ -46,12 +46,13 @@ li {
 
 main {
   background-color: #cbc6c6;
+  padding: 1em;
 }
 main .primaSezione {
   margin: 1em 0;
   border: 1px solid darkred;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 1em;
 }
 main .primaSezione .titoloSezione {
   padding: 0 2em;
@@ -63,12 +64,15 @@ main .primaSezione .titoloSezione {
 main .primaSezione .descrizioneSezione {
   font-size: 1.5em;
   padding: 0 2em;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 main .secondaSezione {
   margin: 1em 0;
   border: 1px solid navy;
-  border-radius: 5px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 1em;
 }
 main .secondaSezione .titoloCard {
   padding: 0 2em;
@@ -92,22 +96,28 @@ main .secondaSezione .containerCard .card .card-body {
   justify-content: space-between;
 }
 main .secondaSezione img {
-  border-radius: 5px;
+  border-radius: 10px;
   height: 150px;
 }
-main .caroselSezione {
+main .terzaSezione .titoloSezione {
+  padding: 0 2em;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+main .terzaSezione .caroselSezione {
   margin: 1em 0;
   display: flex;
   justify-content: center;
   padding: 1em;
 }
-main .caroselSezione .carousel {
+main .terzaSezione .caroselSezione .carousel {
   width: 50%;
-  border: 1px solid green;
-  border-radius: 5px;
+  background-color: black;
+  border-radius: 10px;
 }
-main .caroselSezione .carousel .carousel-item img {
-  height: 100%;
+main .terzaSezione .caroselSezione .carousel .carousel-item img {
+  height: 500px;
   max-height: 500px;
   -o-object-fit: contain;
      object-fit: contain;
@@ -115,6 +125,7 @@ main .caroselSezione .carousel .carousel-item img {
 
 footer {
   background-color: lightgrey;
+  width: 100%;
   padding: 1em;
 }
 @media screen and (max-width: 768px) {

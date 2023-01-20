@@ -1,34 +1,30 @@
 main {
   background-color: $bg-main;
+  @include p;
   .primaSezione {
     @include m-section;
-    // background-color: rgb(222, 72, 72);
     border: 1px solid darkred;
-    border-radius: 5px;
-    padding: 10px;
+    @include b-rad;
+    @include p;
     .titoloSezione {
-      padding: 0 2em;
-      font-weight: bold;
-      font-size: 2em;
-      text-align: center;
+      @include titoloni;
       border-bottom: 1px solid darkred;
     }
     .descrizioneSezione {
       font-size: 1.5em;
       padding: 0 2em;
+      display: flex;
+      align-items: center;
+      text-align: center;
     }
   }
   .secondaSezione {
     @include m-section;
-    // background-color: rgb(77, 77, 215);
     border: 1px solid navy;
-    border-radius: 5px;
-    padding: 10px;
+    @include b-rad;
+    @include p;
     .titoloCard {
-      padding: 0 2em;
-      font-weight: bold;
-      font-size: 2em;
-      text-align: center;
+      @include titoloni;
       border-bottom: 1px solid navy;
     }
     .containerCard {
@@ -46,26 +42,29 @@ main {
       }
     }
     img {
-      border-radius: 5px;
+      @include b-rad;
       height: 150px;
     }
   }
-  .caroselSezione {
-    @include m-section;
-    display: flex;
-    justify-content: center;
-    padding: 1em;
-    .carousel {
-      width: 50%;
-      // background-color: rgb(96, 143, 96);
-      border: 1px solid green;
-      border-radius: 5px;
-
-      .carousel-item {
-        img {
-          height: 100%;
-          max-height: 500px;
-          object-fit: contain;
+  .terzaSezione {
+    .titoloSezione {
+      @include titoloni;
+    }
+    .caroselSezione {
+      @include m-section;
+      display: flex;
+      justify-content: center;
+      @include p;
+      .carousel {
+        width: 50%;
+        background-color: black;
+        @include b-rad;
+        .carousel-item {
+          img {
+            height: 500px;
+            max-height: 500px;
+            object-fit: contain;
+          }
         }
       }
     }
