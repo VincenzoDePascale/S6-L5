@@ -1,5 +1,5 @@
 function navAlert() {
-  alert("cercatele da solo le cose. Sono in ferie!");
+  alert("cercatelo da solo. Sono in ferie!");
 }
 
 function spongebobAlert() {
