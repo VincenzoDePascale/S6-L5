@@ -1,14 +1,20 @@
 main {
-  background-color: $bg-main;
+  @if ($dark-mode == false) {
+    background-color: $bg-main;
+    color: $c-text;
+  } @else {
+    background-color: $c-text;
+    color: $bg-main;
+  }
   @include p;
   .primaSezione {
     @include m-section;
-    border: 1px solid darkred;
+    border: 1px solid $c-dred;
     @include b-rad;
     @include p;
     .titoloSezione {
       @include titoloni;
-      border-bottom: 1px solid darkred;
+      border-bottom: 1px solid $c-dred;
     }
     .descrizioneSezione {
       font-size: 1.5em;
@@ -20,20 +26,21 @@ main {
   }
   .secondaSezione {
     @include m-section;
-    border: 1px solid navy;
+    border: 1px solid $c-navy;
     @include b-rad;
     @include p;
     .titoloCard {
       @include titoloni;
-      border-bottom: 1px solid navy;
+      border-bottom: 1px solid $c-navy;
     }
     .containerCard {
       padding: 1em;
       justify-content: space-around;
       .card {
         padding: 0;
-        width: 225px;
-        margin: 1em;
+        flex-grow: 0;
+        flex-shrink: 1;
+
         .card-body {
           display: flex;
           flex-direction: column;
@@ -57,7 +64,7 @@ main {
       @include p;
       .carousel {
         width: 50%;
-        background-color: black;
+        background-color: $c-text;
         @include b-rad;
         .carousel-item {
           img {
